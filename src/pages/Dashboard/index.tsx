@@ -31,16 +31,17 @@ function Dashboard() {
   const [foods, setFoods] = useState<FoodProps[]>([]);
   const [modalOpen, setModalOpen] = useState(false);
   const [editModalOpen, setEditModalOpen] = useState(false);
-  
+  const [editingFood, setEditingFood] = useState({} as FoodProps);
+
   useEffect(() => {
     async function loadFoods() {
       const response = await api.get<FoodProps[]>('/foods');
-          
+
       setFoods(response.data);
     }
 
     loadFoods();
-  }, []); 
+  }, []);
 
   async function handleAddFood(food: FoodProps) {
     try {
@@ -55,15 +56,8 @@ function Dashboard() {
     }
   }
 
+
   async function handleUpdateFood(food: FoodProps) {
-    //const { foods, editingFood } = this.state;
-
-    const editingFood = await foods.find(f => f.id === food.id);
-
-    if(!editingFood) {
-      throw Error()
-    }
-
     try {
       const foodUpdated = await api.put(
         `/foods/${editingFood.id}`,
@@ -76,7 +70,7 @@ function Dashboard() {
 
       setFoods(foodsUpdated);
     } catch (err) {
-      console.log({error: "Error updating food!"});
+      console.log({ error: "Error updating food!" });
       console.log(err);
     }
   }
@@ -106,39 +100,44 @@ function Dashboard() {
   function handleEditFood(food: FoodProps) {
     handleUpdateFood(food);
     setEditModalOpen(true);
+
+    const foodForEditing = foods.find(f => f.id === food.id);
+
+    if (!foodForEditing) {
+      throw Error()
+    }
+
+    setEditingFood(foodForEditing);
   }
 
-  
-    // const { modalOpen, editModalOpen, editingFood, foods } = this.state;
+  return (
+    <>
+      <Header openModal={toggleModal} />
+      <ModalAddFood
+        isOpen={modalOpen}
+        setIsOpen={toggleModal}
+        handleAddFood={handleAddFood}
+      />
+      <ModalEditFood
+        isOpen={editModalOpen}
+        setIsOpen={toggleEditModal}
+        editingFood={editingFood}
+        handleUpdateFood={handleUpdateFood}
+      />
 
-    return (
-      <>
-        <Header openModal={toggleModal} />
-        <ModalAddFood
-          isOpen={modalOpen}
-          setIsOpen={toggleModal}
-          handleAddFood={handleAddFood}
-        />
-        {/* <ModalEditFood
-          isOpen={editModalOpen}
-          setIsOpen={toggleEditModal}
-          editingFood={editingFood}
-          handleUpdateFood={this.handleUpdateFood}
-        /> */}
-
-        <FoodsContainer data-testid="foods-list">
-          {foods &&
-            foods.map(food => (
-              <Food
-                key={food.id}
-                food={food}
-                handleDelete={handleDeleteFood}
-                handleEditFood={handleEditFood}
-              />
-            ))}
-        </FoodsContainer>
-      </>
-    );
-  };
+      <FoodsContainer data-testid="foods-list">
+        {foods &&
+          foods.map(food => (
+            <Food
+              key={food.id}
+              food={food}
+              handleDelete={handleDeleteFood}
+              handleEditFood={handleEditFood}
+            />
+          ))}
+      </FoodsContainer>
+    </>
+  );
+};
 
 export default Dashboard;
