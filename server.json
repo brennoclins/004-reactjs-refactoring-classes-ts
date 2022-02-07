@@ -53,7 +53,7 @@
       "name": "Hamburgue Dev",
       "price": "25.5",
       "description": "O Melhor Hamburgue de Olinda",
-      "available": true,
+      "available": false,
       "id": 8
     },
     {
