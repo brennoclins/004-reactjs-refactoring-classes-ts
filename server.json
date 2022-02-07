@@ -5,7 +5,7 @@
       "name": "Ao molho",
       "description": "Macarrão ao molho branco, fughi e cheiro verde das montanhas",
       "price": "19.90",
-      "available": false,
+      "available": true,
       "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food1.png"
     },
     {
@@ -13,7 +13,7 @@
       "name": "Veggie",
       "description": "Macarrão com pimentão, ervilha e ervas finas colhidas no himalaia.",
       "price": "21.90",
-      "available": true,
+      "available": false,
       "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food2.png"
     },
     {
@@ -53,7 +53,7 @@
       "name": "Hamburgue Dev",
       "price": "25.5",
       "description": "O Melhor Hamburgue de Olinda",
-      "available": false,
+      "available": true,
       "id": 8
     },
     {
@@ -61,8 +61,16 @@
       "name": "A Prima loira",
       "price": "250.32",
       "description": "A melhor das primas loiras do dia dia",
-      "available": false,
+      "available": true,
       "id": 9
+    },
+    {
+      "image": "https://vignette.wikia.nocookie.net/mixed-magazine/images/a/a9/217373_475635042510758_1267668_n.jpg/revision/latest/scale-to-width-down/185?cb=20130612141200",
+      "name": "As Primas do sorvete",
+      "price": "455.5",
+      "description": "Pra refrestar liga pras primas do sorvete",
+      "available": true,
+      "id": 10
     }
   ]
 }
