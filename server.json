@@ -57,14 +57,6 @@
       "id": 8
     },
     {
-      "image": "",
-      "name": "tabua da gordita",
-      "price": "6766",
-      "description": "A gordida tetuda",
-      "available": true,
-      "id": 9
-    },
-    {
       "image": "https://vignette.wikia.nocookie.net/mixed-magazine/images/a/a9/217373_475635042510758_1267668_n.jpg/revision/latest/scale-to-width-down/185?cb=20130612141200",
       "name": "As Primas do sorvete",
       "price": "455.5",
@@ -95,14 +87,6 @@
       "description": "O Sanduba da gata do surf",
       "available": true,
       "id": 13
-    },
-    {
-      "image": "http://sr.photos3.fotosearch.com/bthumb/CSP/CSP358/k20801165.jpg",
-      "name": "Surf moreninha",
-      "price": "546.90",
-      "description": "O melhor do surf com as moreninhas malhadas na barra do farol",
-      "available": false,
-      "id": 15
     },
     {
       "image": "http://foods.dailyburn.com.s3.amazonaws.com/pictures/145195/large_thumb.jpg",
