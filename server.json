@@ -5,7 +5,7 @@
       "name": "Ao molho",
       "description": "Macarrão ao molho branco, fughi e cheiro verde das montanhas",
       "price": "19.90",
-      "available": true,
+      "available": false,
       "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food1.png"
     },
     {
@@ -21,8 +21,40 @@
       "name": "A la Camarón",
       "description": "Macarrão com vegetais de primeira linha e camarão dos 7 mares.",
       "price": "25.90",
-      "available": false,
+      "available": true,
       "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food3.png"
+    },
+    {
+      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food3.png",
+      "name": "Moda Italiana suprema",
+      "price": "25.5",
+      "description": "Comida italiana das melhores",
+      "available": false,
+      "id": 4
+    },
+    {
+      "image": "https://loboclick.com/preroll/uploads/162027109560935ff74391a.jpg",
+      "name": "pizza das primas",
+      "price": "150",
+      "description": "O sabor das primas em uma super pizza",
+      "available": true,
+      "id": 6
+    },
+    {
+      "image": "https://3.bp.blogspot.com/-AI77E6AK4sc/WpTckdVmwKI/AAAAAAAAAlg/iZ5Wrlkdu648emg0c2mGk9my_vkUdxiZgCLcBGAs/w150-h150-p-nu/IMG-20180222-WA0045.jpg?resize=959%2C1280&ssl=1",
+      "name": "Prima ao molho",
+      "price": "110.45",
+      "description": "A melhor prima ao molho rose",
+      "available": true,
+      "id": 7
+    },
+    {
+      "image": "http://www.pngall.com/wp-content/uploads/5/Sandwich-Hamburger-PNG-Free-Image-180x180.png",
+      "name": "Hamburgue Dev",
+      "price": "25.5",
+      "description": "O Melhor Hamburgue de Olinda",
+      "available": true,
+      "id": 8
     }
   ]
 }
