@@ -16,16 +16,12 @@ interface FoodProps {
   image: string;
 }
 
-interface DashboardProps {
-  foods: FoodProps[];
-  // editingFood: {
-  //   food: Food;
-  //   editModalOpen: Boolean;
-  // },
-  editingFood: FoodProps;
-  editModalOpen: boolean;
-  modalOpen: boolean;
-}
+// interface DashboardProps {
+//   foods: FoodProps[];
+//   editingFood: FoodProps;
+//   editModalOpen: boolean;
+//   modalOpen: boolean;
+// }
 
 function Dashboard() {
   const [foods, setFoods] = useState<FoodProps[]>([]);
@@ -68,7 +64,8 @@ function Dashboard() {
         f.id !== foodUpdated.data.id ? f : foodUpdated.data,
       );
 
-      setFoods(foodsUpdated);
+      
+      setFoods(foodsUpdated);      
     } catch (err) {
       console.log({ error: "Error updating food!" });
       console.log(err);
@@ -98,16 +95,17 @@ function Dashboard() {
   }
 
   function handleEditFood(food: FoodProps) {
-    handleUpdateFood(food);
-    setEditModalOpen(true);
-
     const foodForEditing = foods.find(f => f.id === food.id);
-
+       
     if (!foodForEditing) {
       throw Error()
     }
 
     setEditingFood(foodForEditing);
+    handleUpdateFood(food);
+    setEditModalOpen(true);
+
+    
   }
 
   return (

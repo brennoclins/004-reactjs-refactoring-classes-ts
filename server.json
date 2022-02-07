@@ -57,11 +57,11 @@
       "id": 8
     },
     {
-      "image": "https://cdn.mundodastribos.com/2013/03/593658-Famosas-que-s%C3%A3o-loiras-naturais-4-150x150.jpg",
-      "name": "A Prima loira",
-      "price": "250.32",
-      "description": "A melhor das primas loiras do dia dia",
-      "available": false,
+      "image": "",
+      "name": "tabua da gordita",
+      "price": "6766",
+      "description": "A gordida tetuda",
+      "available": true,
       "id": 9
     },
     {
@@ -97,20 +97,28 @@
       "id": 13
     },
     {
-      "image": "https://i.etsystatic.com/5174736/d/il/3d02f4/490132362/il_170x135.490132362_euuc.jpg?version=0",
-      "name": "Novo surf das gatinhas",
-      "price": "200",
-      "description": "super surf das gatinhas",
-      "available": true,
-      "id": 14
-    },
-    {
       "image": "http://sr.photos3.fotosearch.com/bthumb/CSP/CSP358/k20801165.jpg",
       "name": "Surf moreninha",
       "price": "546.90",
       "description": "O melhor do surf com as moreninhas malhadas na barra do farol",
-      "available": true,
+      "available": false,
       "id": 15
+    },
+    {
+      "image": "http://foods.dailyburn.com.s3.amazonaws.com/pictures/145195/large_thumb.jpg",
+      "name": "La Gordita",
+      "price": "100",
+      "description": "Uma delicinha do ceará, massa vegana, morangos, galinha assadinha, e o grande molho da La Gordita",
+      "available": true,
+      "id": 16
+    },
+    {
+      "image": "https://www.durangomas.mx/wp-content/uploads/2014/03/La-Caba%C3%B1ita-Galeria-3-195x195.jpg",
+      "name": "La Cabañita",
+      "price": "33.2",
+      "description": "Uma delicinha do caribe",
+      "available": true,
+      "id": 17
     }
   ]
 }
