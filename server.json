@@ -61,7 +61,7 @@
       "name": "A Prima loira",
       "price": "250.32",
       "description": "A melhor das primas loiras do dia dia",
-      "available": true,
+      "available": false,
       "id": 9
     },
     {
@@ -71,6 +71,22 @@
       "description": "Pra refrestar liga pras primas do sorvete",
       "available": true,
       "id": 10
+    },
+    {
+      "image": "http://www.californiabountiful.com/img/imgLibrary/Articles/tv/previous/2041_green-garlic_pizza.jpg",
+      "name": "Pizza Green",
+      "price": "21.68",
+      "description": "A pizza green é uma boma opção pra quem tem espirito aventureiro e curte a natureza",
+      "available": true,
+      "id": 11
+    },
+    {
+      "image": "https://s3-media2.fl.yelpcdn.com/bphoto/oLpH3guGPdPJctOn9-dIBQ/180s.jpg",
+      "name": "Especial da Mama",
+      "price": "43.9",
+      "description": "Hamburgue artesanal com fritas e um arroz caseiro da Mama",
+      "available": true,
+      "id": 12
     }
   ]
 }
